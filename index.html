@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Groovy</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container clearfix">
+		<header class="border-top padding-bgwhite">
+			<nav>
+				<div class="nav-item">
+						<a href="#">HOME</a>
+						<p>BACK HOME</p>
+				</div>
+				<div class="nav-item">
+						<a href="#">OPTIONS PANEL</a>
+						<p>CONTROL SETTING</p>
+				</div>
+				<div class="nav-item">
+						<a href="#">ABOUT</a>
+						<p>WHO WE ARE</p>
+				</div>
+				<div class="nav-item">
+						<a href="#">FULL WIDTH</a>
+						<p>NO SIDEBARS</p>
+				</div>
+			</nav>
+		</header>
+		<div class="main clearfix">
+			<div class="left-panel">
+				<div class="news">
+					<div class="news-item border-top padding-bgwhite">
+						<img class="news-img" src="./images/jogging.jpg" alt="">
+						<h2 class="news-header">PORTTITOR LECTUS TINCIDUNT ELEMENTUM NASCETUR MONTES</h2>
+						<p class="news-info">POSTED IN <strong>FACEBOOK</strong> BY <strong>MYTHEMESHOP</strong> ON MAY 28, 2016</p>
+						<p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada, nibh quis egestas pellentesque, dui neque sagittis nisl, eget malesuada nunc felis sed augue. Aenean tempor nibh sed diam elementum sollicitudin quis in metus. Praesent tincidunt, velit</p>
+						<p class="news-readmore">Read More</p>
+					</div>
+					<div class="news-item border-top padding-bgwhite">	
+						<img class="news-img" src="./images/elephant.jpeg" alt="">
+						<h2 class="news-header">BASHET PID NASSA TORTTITOR NICTUMST SC AENEAN S BORT</h2>
+						<p class="news-info">POSTED IN <strong>SOCIAL MEDIA</strong> BY <strong>MYTHEMESHOP</strong> ON MAY 25, 2016</p>
+						<p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada, nibh quis egestas pellentesque, dui neque sagittis nisl, eget malesuada nunc felis sed augue. Aenean tempor nibh sed diam elementum sollicitudin quis in metus. Praesent tincidunt, velit</p>
+						<p class="news-readmore">Read More</p>
+					</div>
+				</div>
+				<div class="news-pagination border-top padding-bgwhite">
+					<a class="pagination-current"href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+				</div>
+			</div>
+			<div class="right-panel">
+				<div class="featured-photo border-top padding-bgwhite">
+					<img src="./images/300x250.png" alt="">
+				</div>
+				<div class="popular-recent border-top padding-bgwhite">
+					<div class="popular-recent-buttons">
+						<div class="popular-recent-button active" id="button-popular" onclick="changeTab('Popular')">Popular</div>
+						<div class="popular-recent-button" id="button-recent" onclick="changeTab('Recent')">Recent</div>
+					</div>
+					<div class="popular-recent-contents">
+							<div class="popular-recent-content" id="content-popular">Unable to load tab content but this is Popular tab xD</div>
+							<div class="popular-recent-content hide" id="content-recent">Unable to load tab content but this is Recent tab xD</div>
+					</div>
+				</div>
+				<div class="search-bar border-top padding-bgwhite">
+					<strong>SEARCH</strong>
+					<input type="text" name="" id="">
+				</div>
+				<div class="sponsors border-top padding-bgwhite">
+					<p><strong>OUR SPONSORS:</strong></p>
+					<div>
+							<img src="./images/125x125.png" alt="">
+							<img src="./images/125x125.png" alt="">
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<footer class="clearfix">
+			<div class="footer-infos border-top padding-bgwhite">
+				<div class="footer-info-collum">
+					<h2 class="footer-headers">LOREM IPSUM</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur quam augue,<a href="#">vehicula quis</a> , tincidunt vel, varius vitae, nulla. Sed convallis orci. Duis libero orci, pretium a.</p>
+				</div>
+				<div class="footer-info-collum">
+					<h2 class="footer-headers">RECENT POSTS</h2>
+					<ul>
+						<li>Porttitor Lectus Tincidunt Elementum Nascetur Montes</li>
+						<li>Bashet Pid Nassa Torttitor Nictumst Sc Aenean S Bort</li>
+						<li>Cum Sociis Natoque Penatibus Magnis</li>
+						<li>Why Facebook’s IPO Could Be Bad News For Users’ Privacy</li>
+						<li>Porttitor Lectus Tincidunt Elementum Nascetur Montes</li>
+					</ul>
+				</div>
+				<div class="footer-info-collum">
+					<h2 class="footer-headers">TAGS</h2>
+					<div class="footer-tag"><hashtag >Facebook</hashtag></div>
+					<div class="footer-tag"><hashtag >featured</hashtag></div>
+					<div class="footer-tag"><hashtag >Social media</hashtag></div>
+					<div class="footer-tag"><hashtag >Tag 1</hashtag></div>
+					<div class="footer-tag"><hashtag >Tag 2</hashtag></div>
+					<div class="footer-tag"><hashtag >Tag 3</hashtag></div>
+					
+				</div>
+			</div>
+			<div class="footer-credits clearfix">
+				<div class="footer-copyright">
+					<p><strong>Groovy Theme Demo</strong> Copyright © 2018.</p>
+				</div>
+				<div class="footer-themeby">
+					<p>Theme by <strong>MyThemeShop.</strong> Back to Top ↑</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+		function changeTab(tabName){
+			var popularTab=document.getElementById('content-popular');
+			var recentTab=document.getElementById('content-recent');
+			var popularButton=document.getElementById('button-popular');
+			var recentButton=document.getElementById('button-recent');
+			if (tabName==="Popular"){
+				popularButton.classList.add("active");
+				recentButton.classList.remove("active");
+				popularTab.classList.remove("hide");
+				recentTab.classList.add("hide");
+			}else{
+				recentButton.classList.add("active");
+				popularButton.classList.remove("active");
+				recentTab.classList.remove("hide");
+				popularTab.classList.add("hide");
+			}
+		}
+	</script>
+</body>
+</html>
